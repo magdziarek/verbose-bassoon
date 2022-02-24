@@ -6,7 +6,7 @@ Testing differences in remediation advice and fix PRs when we chop the transitiv
 <table>
   <tr>
       <th>With changes</th>
-      <th>Control</th>
+      <th>Maven-deps@4.12.0</th>
     </tr>
     <tr>
       <td>
@@ -24,7 +24,7 @@ Testing differences in remediation advice and fix PRs when we chop the transitiv
 <table>
   <tr>
      <th>With changes</th>
-     <th>Control</th>
+     <th>Maven-deps@4.12.0</th>
   </tr>
   <tr>
      <td>
@@ -43,7 +43,7 @@ Testing differences in remediation advice and fix PRs when we chop the transitiv
 <table>
   <tr>
       <th>With changes</th>
-      <th>Control</th>
+      <th>Maven-deps@4.12.0</th>
     </tr>
     <tr>
       <td>
@@ -60,7 +60,7 @@ Testing differences in remediation advice and fix PRs when we chop the transitiv
 <table>
   <tr>
       <th>With changes</th>
-      <th>Control</th>
+      <th>Maven-deps@4.12.0</th>
     </tr>
     <tr>
       <td>
