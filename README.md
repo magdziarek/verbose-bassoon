@@ -6,7 +6,7 @@ Testing differences in remediation advice and fix PRs when we chop the transitiv
 <table>
   <tr>
       <th>With changes</th>
-      <th>Control</th>
+      <th>Maven-deps@4.12.0</th>
     </tr>
     <tr>
       <td>
@@ -15,7 +15,7 @@ Testing differences in remediation advice and fix PRs when we chop the transitiv
     </td>
     <td>
       All paths on which this vulnerable transitive is are considered - the first one has no fix, but the others suggest bumping the version of the dependency. The fix PR modifies the version of poi and poi-ooxml
-<img width="1163" alt="Screenshot 2022-02-23 at 14 02 47" src="https://user-images.githubusercontent.com/26426498/155332805-c33a18a9-cbf3-4649-8999-16c3873e3621.png">
+      <img width="1123" alt="1-commons-codec" src="https://user-images.githubusercontent.com/26426498/155532705-ffbb9aaa-41b7-4251-b3f8-89e87d116b8f.png">
       <img width="865" alt="Screenshot 2022-02-23 at 14 01 06" src="https://user-images.githubusercontent.com/26426498/155337176-8fa90824-387f-487a-80b3-8e115a8270ad.png">
     </td>
 </tr>
@@ -24,7 +24,7 @@ Testing differences in remediation advice and fix PRs when we chop the transitiv
 <table>
   <tr>
      <th>With changes</th>
-     <th>Control</th>
+     <th>Maven-deps@4.12.0</th>
   </tr>
   <tr>
      <td>
@@ -36,6 +36,22 @@ Testing differences in remediation advice and fix PRs when we chop the transitiv
   </tr>
 </table>
 
+<table>
+  <tr>
+     <th>With changes</th>
+     <th>Maven-deps@4.12.0</th>
+  </tr>
+  <tr>
+     <td>
+Snyk suggests fixing 3 vulnerabilities in poi (without commons-codec only seen in httpclient) - this can be done by ugrading to version 3.17
+      <img width="486" alt="Screenshot 2022-02-24 at 14 30 34" src="https://user-images.githubusercontent.com/26426498/155533441-15d81d68-c5d8-4368-93df-414c2b3cefd8.png"> 
+    </td>
+    <td>
+Snyk suggests fixing 4 vulnerabilities (including Information Exposure introduced through commons-codec) so we have to bump poi to version 4.1.1
+      <img width="583" alt="Screenshot 2022-02-24 at 14 30 47" src="https://user-images.githubusercontent.com/26426498/155533696-b4871bbf-4326-44e9-9479-850f66f5184b.png">
+    </td>
+  </tr>
+</table>
 
 <h3>2. After merging the first fix PR we restest with Snyk and we see:</h3>
 
@@ -43,7 +59,7 @@ Testing differences in remediation advice and fix PRs when we chop the transitiv
 <table>
   <tr>
       <th>With changes</th>
-      <th>Control</th>
+      <th>Maven-deps@4.12.0</th>
     </tr>
     <tr>
       <td>
@@ -60,7 +76,7 @@ Testing differences in remediation advice and fix PRs when we chop the transitiv
 <table>
   <tr>
       <th>With changes</th>
-      <th>Control</th>
+      <th>Maven-deps@4.12.0</th>
     </tr>
     <tr>
       <td>
